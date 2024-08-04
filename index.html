@@ -9,114 +9,114 @@
     <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Fira+Code:wght@300..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <style>
         *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Delicious Handrawn;
-}
-.codepen-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #90d4ff;
-    height: 100vh;
-}
-body{
-    background-color: #90d4ff;
-    -webkit-user-select: none;
-    user-select: none;
-}
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Delicious Handrawn;
+        }
+        .codepen-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #90d4ff;
+            height: 100vh;
+        }
+        body{
+            background-color: #90d4ff;
+            -webkit-user-select: none;
+            user-select: none;
+        }
 
-@keyframes come-from-up {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
+        @keyframes come-from-up {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
 
-@keyframes fadeout{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-.book {
-    height: 33rem;
-    width: 22rem;
-    font-size: 1.4rem;
-    box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, .25);
-    position: relative;
-    color: white;
-    opacity: 0;
-    /* display: none; */
-}
-.page {
-    width: 100%;
-    height: 33rem;
-    perspective: 1500px;
-}
-.page__1 {
-    background-color: #0d3c63;
-    color: #0d3c63;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    padding: 20px;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    left: 0;
-    opacity: 1;
-    transition: all 1s 0.3s;
-    transform-origin: 0 50%;
-    z-index: 2;
-}
-.page__1::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #11548a;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0;
-    transform: rotateY(180deg);
-    transition: all 0.3s 0.5s;
-}
-.page__2 {
-    background-color: #0d3c63;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: absolute;
-    padding: 30px;
-    animation: color-white 2s;
-    top: 0;
-    left: 0;
-    opacity: 1;
-}
-@keyframes color-white{
-    from{
-        color: #0d3c63;
-    }
-    to{
-        color: white;
-    }
-}
-.page:hover .page__1 {
-    transform: rotateY(-180deg);
-    box-shadow: 1.5rem 2rem 3rem rgba(0, 0, 0, .25);
-}
-.page:hover .page__1::after {
-    opacity: 1;
-}
+        @keyframes fadeout{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .book {
+            height: 35rem;
+            width: 22rem;
+            font-size: 1.4rem;
+            box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, .25);
+            position: relative;
+            color: white;
+            opacity: 0;
+            /* display: none; */
+        }
+        .page {
+            width: 100%;
+            height: 35rem;
+            perspective: 1500px;
+        }
+        .page__1 {
+            background-color: #0d3c63;
+            color: #0d3c63;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            padding: 20px;
+            position: absolute;
+            text-align: center;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            transition: all 1s 0.3s;
+            transform-origin: 0 50%;
+            z-index: 2;
+        }
+        .page__1::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #11548a;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0;
+            transform: rotateY(180deg);
+            transition: all 0.3s 0.5s;
+        }
+        .page__2 {
+            background-color: #0d3c63;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: absolute;
+            padding: 30px;
+            animation: color-white 2s;
+            top: 0;
+            left: 0;
+            opacity: 1;
+        }
+        @keyframes color-white{
+            from{
+                color: #0d3c63;
+            }
+            to{
+                color: white;
+            }
+        }
+        .page:hover .page__1 {
+            transform: rotateY(-180deg);
+            box-shadow: 1.5rem 2rem 3rem rgba(0, 0, 0, .25);
+        }
+        .page:hover .page__1::after {
+            opacity: 1;
+        }
     </style>
 </head>
 <body>
@@ -124,16 +124,23 @@ body{
         <div class="book">
           <div class="page">
             <div class="page__1" style="display: flex;flex-direction: column;align-items: center;">
-              <h3 style="background-color: white;padding: 3px 20px;border-radius: 4px;margin-bottom: 10px;">PATA NAHI KAHI SE PATA LAGA H KI AAJ KISI KA JANAMDIN HAI</h3>
-              <small style="background-color: white;padding: 3px;border-radius: 4px;margin-bottom: 10px;font-weight: 700;">KOI NI CARD KHOL KE DEKHTE HAI KISKA BIRTHDAY HAI<br>KON PARTY SE BACHNA CHAHTA HAI</small>
+              <h3 style="background-color: white;padding: 3px 20px;border-radius: 4px;margin-bottom: 10px;font-size: 20px;">THODA SA EXCITEMENT HAI NA MUJHE BHI H KI KYA REACTION RAHEGA</h3>
+              <small style="background-color: white;padding: 3px;border-radius: 4px;margin-bottom: 10px;font-weight: 700;font-size: 15px;">HOVER YA TAP KRLO OPEN HOJAYEGA</small>
               <img src="pngegg (1).png" style="width: 90%;position: absolute; bottom: 0;" alt="">
             </div>
             <div class="page__2">
-              <h3 style="text-align: center;font-size: 30px;border: 3px solid white;border-radius: 10px; padding: 10px 0;color: #0d3c63;background-color: white;">Happy Birthday My Best Friend!</h3>
-              <p style="text-align: justify;">
-                Wishing to my best friend a Happy Birthday. 🎉 Thank you for being my best friend. 🤗 I hope you have a wonderful day and that the year ahead is filled with much love, many wonderful surprises and gives you lasting memories that you will cherish in all the days ahead. 🎂 Happy Birthday. 🥳
+              <h3 style="text-align: center;font-size: 20px;border: 3px solid white;border-radius: 10px; padding: 10px 0;color: #0d3c63;background-color: white;">Happy Birthday My Best Friend!</h3>
+              <p style="text-align: justify;font-size: 15px;">
+                Wishing to my best friend a Happy Birthday. 🎉 Thanks alot for being my best friend, understanding me in every situation and also for being with me when no-one is with me when I am alone when I am broken. 🤗 I hope you have a wonderful day and that the year ahead is filled with much love, many wonderful surprises and gives you lasting memories that you will cherish in all the days ahead. 🎂 Happy Birthday. 🥳
+                <br>   
+                <br>   
+                Aur ha iss idea ko churane ki na sochna aur agar socha bhi na to patent karwa lunga iss idea ka phir krna chori. <br>
+                <br>
+                Ha Ha Ha... pata hai kuchh jyada durr ki faink di pata h inn cheezon ka patent nahi hota but koi na..... koi tareeka nikal hi lenge hum. 😅😅
+                <br><br>
+                At last again wish you a Very Very Happy Birthday 🎂🎉🎊 Bhagwan tujhe sari khusi de tujhe meri bhi umar laga de aur tu humesha khush rhe 🤗
               </p>
-              <p style="text-align: right;"><span style="background-color: white;color: #0d3c63;padding: 3px 8px;font-weight: 600;border-radius: 5px;">Humanshu Jaglan</span></p>
+              <p style="text-align: right;display: flex;flex-direction: column;align-items: end;"><span style="background-color: white;color: #0d3c63;padding: 3px 8px;font-weight: 600;border-radius: 5px 5px 0 0;font-size: 15px;margin-bottom: 0;">Your friend,</span><span style="background-color: white;color: #0d3c63;padding: 3px 8px;font-weight: 600;border-radius: 5px 0 5px 5px;font-size: 15px;margin-top: 0;">Humanshu Jaglan</span></p>
             </div>
           </div>
         </div>
